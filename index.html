@@ -1,35 +1,80 @@
 <!DOCTYPE html>
-<html>
-<head>
+<html lang="en">
+  <head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Whack-a-Mole!!</title>
+    <link rel="shortcut icon" href="#">
+    <link rel="stylesheet" href="./src/styles.css">
+    <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+  </head>
 
-<title>My Favorite Pizza</title>
+  <body>
+    <!--------------------------------Game Title------------------------------------>
 
-<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/5.0.0/normalize.min.css" />
+<h1 id="title"> Whack-A-Mole!</h1>
 
-<link href="style.css" rel="stylesheet" type="text/css" />
 
-</head>
 
-<body>
-
-<!-- WEB PAGE CONTENT HERE -->
-
-<div class="pageContainer">
-  <div class="imageContainer"> 
-    <img src="images/pizza.jpg" alt="Pizza with pepperoni and cheese." /> 
-  </div>
-  <div class="textContainer">
-    <h1>Pizza!</h1>
-    <p>My Favorite Toppings: </p>
-    <ul>
-      <li>Pepperoni</li>
-      <li>Mozzarella Cheese</li>
-      <li>Mushrooms</li>
-    </ul>
-  </div>
+<div class="score">
+  <h2>Score: <span id="score">0</span></h2>
+  <p>This land is plagued by moles. Use the mouse by clicking to whack a mole to get a high score.</p>
 </div>
 
-</body>
+
+<div class="timer">
+<h2>Timer: <span id="timer">0</span> seconds left.</h2>
+<p>Try to collect as many mines as you can within the limited time and go to the next level.</p>
+</div>
+
+
+
+<div class="game">
+  <h2>Click start to play!</h2>
+  <button id="start">Start</button>
+  <button id="stop">Stop</button>
+  <button id="pause">Pause</button>
+  <button id="restart">Restart</button>
+</div>
+
+
+     <!--------------------------------Game Grid------------------------------------>
+     <div class="grid">
+          <div id="hole0" class="hole">
+            <div id="mole0" class="mole"></div>
+          </div>
+          <div id="hole1" class="hole">
+            <div id="mole1" class="mole"></div>
+          </div>
+          <div id="hole2" class="hole">
+            <div id="mole2" class="mole"></div>
+          </div>
+          <div id="hole3" class="hole">
+            <div id="mole3" class="mole"></div>
+          </div>
+          <div id="hole4" class="hole">
+            <div id="mole4" class="mole"></div>
+          </div>
+          <div id="hole5" class="hole">
+            <div id="mole5" class="mole"></div>
+          </div>
+          <div id="hole6" class="hole">
+            <div id="mole6" class="mole"></div>
+          </div>
+          <div id="hole7" class="hole">
+            <div id="mole7" class="mole"></div>
+          </div>
+          <div id="hole8" class="hole">
+            <div id="mole8" class="mole"></div>
+          </div>
+     </div>
+
+
+
+    <!--------------------------------Game Script--------------------------------->
+    <script src="./src/index.js"></script>
+
+  </body>
 </html>
 
 
